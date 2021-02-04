@@ -5,7 +5,7 @@ import Welcome from './Components/welcome/welcome'
 import Clock from './Components/clock/clock'
 import Contact from './Components/contact/contact'
 import Navigation from './Components/navigation/Navigation';
-import NotFound from './Components/notfound/NotFound';
+// import NotFound from './Components/notfound/NotFound';
 import Jeopardy from './Components/jeopardy/Jeopardy';
 
 function App() {
@@ -22,7 +22,8 @@ function App() {
       <Route path="/clock" component={Clock}/>
       <Route path ="/contact"component={Contact}/>
       <Route path ="/welcome/:name"component={Welcome}/>
-      <Route component={NotFound} />
+      {/* <Route component={NotFound} /> */}
+      <Route path="/jeopardy" component={Jeopardy}/>
 
 
       </Switch>
