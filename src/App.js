@@ -11,13 +11,12 @@ import Jeopardy from './Components/jeopardy/Jeopardy';
 function App() {
   return (
     <div className="App">
-      <Jeopardy/>
       <Navigation/>
       <Switch>
       <Route 
        exact 
        path="/" 
-       render={(props) => <Welcome {...props} name="Davey" />}
+       render={(props) => <Welcome {...props} name=" " />}
         />
       <Route path="/clock" component={Clock}/>
       <Route path ="/contact"component={Contact}/>

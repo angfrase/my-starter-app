@@ -30,6 +30,7 @@ class Jeopardy extends Component {
             score: state.score + state.data.value,
             formData: {
                 answer: ""
+                
             }
           }))
     } else {
@@ -83,6 +84,10 @@ class Jeopardy extends Component {
         <div>
              <label>Category:</label>
                 {this.state.data.category.title}
+        </div>
+        <div>
+             <label>Category:</label>
+                {this.state.data.category_id}
         </div>
         <div>
              <label>Score</label>
